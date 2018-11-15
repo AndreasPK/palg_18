@@ -4,7 +4,15 @@ A greedy haskell implementation.
 
 # Installation
 
-## Installation the easy way:
+## Using Docker
+
+docker build -t dKlebinger .
+
+docker run --rm -it --entrypoint /bin/sh dKlebinger
+
+`cabal new-run exe:pgreedy -- input/sample.txt`
+
+## Using Stack directly
 
 * Install the build tool stack
 `curl -sSL https://get.haskellstack.org/ | sh`
@@ -17,7 +25,7 @@ A greedy haskell implementation.
 
 This will output any found solution to stdout.
 
-## Alternative installation for Debian/Ubunto (untested)
+## Using apt-get for Debian/Ubunto (untested)
 
 * Depending on the distro there might be packages of the
   name haskell-stack to install the build tool:
